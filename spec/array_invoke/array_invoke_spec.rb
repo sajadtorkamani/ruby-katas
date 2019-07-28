@@ -11,8 +11,6 @@ class Item
     @arg1 = arg1
     @arg2 = arg2
 
-    puts 'inside :update !!!!!!!'
-
     "updated"
   end
 end
