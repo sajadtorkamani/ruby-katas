@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/line-type-parser/train/ruby
