@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/enumerable-magic-number-6-count-items/train/ruby
