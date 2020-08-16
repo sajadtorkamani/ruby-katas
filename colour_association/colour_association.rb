@@ -1,5 +1,5 @@
 def colour_association(colours)
-  colours.map do |colour|
-    { colour[0] => colour[1] }
+  colours.map do |name, association|
+    { name => association }
   end
 end
