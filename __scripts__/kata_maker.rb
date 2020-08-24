@@ -46,6 +46,8 @@ class KataMaker
     filename = "#{kata_dir}/#{method_name}_spec.rb"
 
     File.open(filename, "w+") do |f|
+      f.write("require_relative '#{method_name}'")
+      f.write("\n\n")
       f.write("describe :#{method_name} do")
       f.write("\n\n")
       f.write("end")
