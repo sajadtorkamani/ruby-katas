@@ -1,14 +1,13 @@
 #!/usr/bin/env ruby
-
 class KataMaker
-  attr_accessor :method_name, :kata_url
+  attr_accessor :method_name, :kata_url, :kata_dir
 
   def initialize(args)
     @method_name, @kata_url = args
+    @kata_dir = File.join(__dir__, "..", @method_name)
 
     validate_args
   end
-
 
   def validate_args
     if @method_name.nil?
@@ -22,34 +21,44 @@ class KataMaker
     end
   end
 
-  def run
-    kata_dir = File.join(__dir__, "..", @method_name)
-    solution_filename = "#{kata_dir}/#{method_name}.rb"
-    spec_filename = "#{kata_dir}/#{method_name}_spec.rb"
-    readme_filename = "#{kata_dir}/readme.md"
+  def make
+    create_directory
+    create_solution
+    create_spec
+    create_readme
+  end
 
-    # Create directory
+  def create_directory
     Dir.mkdir(kata_dir) unless Dir.exists?(kata_dir)
+  end
 
-    # Create solution file
-    File.open(solution_filename, "w+") do |f|
+  def create_solution
+    filename = "#{kata_dir}/#{method_name}.rb"
+
+    File.open(filename, "w+") do |f|
       f.write("def #{method_name}")
       f.write("\n\n")
       f.write("end")
     end
+  end
 
-    # Create spec file
-    File.open(spec_filename, "w+") do |f|
+  def create_spec
+    filename = "#{kata_dir}/#{method_name}_spec.rb"
+
+    File.open(filename, "w+") do |f|
       f.write("describe :#{method_name} do")
       f.write("\n\n")
       f.write("end")
     end
+  end
 
-    # Create README
-    File.open(readme_filename, "w+") do |f|
+  def create_readme
+    filename = "#{kata_dir}/readme.md"
+
+    File.open(filename, "w+") do |f|
       f.write(@kata_url)
     end
   end
 end
 
-KataMaker.new(ARGV).run
+KataMaker.new(ARGV).make
