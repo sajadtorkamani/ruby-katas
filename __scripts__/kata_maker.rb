@@ -48,7 +48,7 @@ class KataMaker
     File.open(filename, "w+") do |f|
       f.write("require_relative '#{method_name}'")
       f.write("\n\n")
-      f.write("describe :#{method_name} do")
+      f.write("describe '#{method_name}' do")
       f.write("\n\n")
       f.write("end")
     end
