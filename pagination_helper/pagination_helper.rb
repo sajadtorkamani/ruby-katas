@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PaginationHelper
   attr_reader :collection, :page_size
 

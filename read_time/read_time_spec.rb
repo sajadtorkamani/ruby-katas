@@ -2,7 +2,6 @@
 
 require_relative 'read_time'
 
-# rubocop:disable Metrics/BlockLength
 describe 'read_time' do
   it 'handles exact hours' do
     expect(read_time('13:00')).to eql "one o'clock"
@@ -41,4 +40,3 @@ describe 'read_time' do
     expect(read_time('23:59')).to eql 'one minute to midnight'
   end
 end
-# rubocop:enable Metrics/BlockLength

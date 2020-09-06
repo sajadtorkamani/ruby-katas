@@ -2,7 +2,6 @@
 
 require_relative './array_filters'
 
-# rubocop:disable Metrics/BlockLength
 describe Array do
   describe '#even' do
     it 'works correctly' do
@@ -35,4 +34,3 @@ describe Array do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

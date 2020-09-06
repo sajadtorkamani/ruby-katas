@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require_relative 'pagination_helper'
 
 describe PaginationHelper do
-  let(:helper) {
-    PaginationHelper.new(%w[a b c d e f], 4)
-  }
+  let(:helper) { described_class.new(%w[a b c d e f], 4) }
 
   describe '#new' do
     it 'sets up the object correctly' do
@@ -44,7 +44,7 @@ describe PaginationHelper do
     it 'returns -1 if item index is out of range' do
       expect(helper.page_index(8)).to eq(-1)
       expect(helper.page_index(20)).to eq(-1)
-      expect(helper.page_index(-10)).to eq (-1)
+      expect(helper.page_index(-10)).to eq(-1)
     end
   end
 end
