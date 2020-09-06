@@ -17,4 +17,3 @@ def mutate_my_strings(s1, s2)
 
   mutations.join("\n") + "\n"
 end
-

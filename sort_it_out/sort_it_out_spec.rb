@@ -12,6 +12,6 @@ describe :sort_it_out do
   end
 
   it 'handles decimals' do
-    expect(sort_it_out([11,22,33,44,55,55,90.4,4,78])).to eq [11,33,55,55,90.4,78,44,22,4]
+    expect(sort_it_out([11, 22, 33, 44, 55, 55, 90.4, 4, 78])).to eq [11, 33, 55, 55, 90.4, 78, 44, 22, 4]
   end
 end

@@ -14,4 +14,3 @@ describe 'bin_rota' do
     expect(bin_rota([['Billy'], ['Megan'], ['Aki'], ['Arun'], ['Joy']])).to eq ['Billy', 'Megan', 'Aki', 'Arun', 'Joy']
   end
 end
-

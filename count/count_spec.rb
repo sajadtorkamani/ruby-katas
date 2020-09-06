@@ -7,5 +7,3 @@ describe 'count' do
     expect(count([5, 10, 15, 20]) { |x| x == 5 }).to eql 1
   end
 end
-
-

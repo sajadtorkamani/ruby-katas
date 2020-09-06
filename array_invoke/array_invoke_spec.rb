@@ -15,7 +15,6 @@ class Item
   end
 end
 
-
 describe 'Array#invoke' do
   it 'handles simple case without block' do
     items = [Item.new, 'foo', Item.new]

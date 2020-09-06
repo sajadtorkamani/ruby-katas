@@ -1,3 +1,3 @@
 def count(list, &block)
-  list.count { |x| block.call(x)}
+  list.count { |x| block.call(x) }
 end

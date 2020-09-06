@@ -7,4 +7,3 @@ def solve(str)
     end
     .max
 end
-

@@ -1,6 +1,6 @@
 require_relative 'match_husband'
 
-describe 'match_husband'do
+describe 'match_husband' do
   it 'returns correct result' do
     expect(match_husband([15, 24, 12], 4)).to eq 'No match!'
     expect(match_husband([26, 23, 19], 3)).to eq 'Match!'

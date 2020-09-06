@@ -1,4 +1,3 @@
-
 class Num
   @@names = %w[zero one two three four five six seven eight nine]
 

@@ -7,4 +7,3 @@ def get_socks(person, socks)
     duplicate ? [duplicate, duplicate] : []
   end
 end
-

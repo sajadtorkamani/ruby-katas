@@ -17,7 +17,6 @@ describe :valid_date do
     expect(valid_date =~ "[3] [12-04] [09-tenth]").to be_a Integer
     expect(valid_date =~ "[[[08-29]]]").to be_a Integer
     expect(valid_date =~ "[02-[08-11]04]").to be_a Integer
-    #
     expect(valid_date =~ "[02-31]").to be_nil
     expect(valid_date =~ "[ 6-03]").to be_nil
     expect(valid_date =~ "[02-00]").to be_nil

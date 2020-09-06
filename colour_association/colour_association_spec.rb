@@ -19,7 +19,7 @@ describe :colour_association do
     ]
 
     expect(colour_association([['white', 'goodness'], ['blue', 'goodness']])).to eql [
-     { 'white' => 'goodness' }, { 'blue' => 'goodness' }
+      { 'white' => 'goodness' }, { 'blue' => 'goodness' }
     ]
   end
 end

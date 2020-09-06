@@ -79,4 +79,3 @@ MINUTES = [
   'twenty two', 'twenty three', 'twenty four', 'twenty five', 'twenty six', 'twenty seven', 'twenty eight',
   'twenty nine', 'thirty'
 ]
-

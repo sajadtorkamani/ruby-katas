@@ -29,4 +29,3 @@ describe :leap_year? do
     expect(leap_year?(300)).to be false
   end
 end
-
