@@ -2,34 +2,26 @@
 # frozen_string_literal: true
 
 class KataMaker
-  attr_accessor :method_name, :kata_url, :kata_dir
+  attr_accessor :method_name, :kata_dir
 
   def initialize(args)
-    @method_name, @kata_url = args
+    @method_name = args.first
     @kata_dir = File.join(__dir__, '..', @method_name)
 
     validate_args
   end
 
-  # rubocop:disable Style/GuardClause
   def validate_args
-    if @method_name.nil?
+    if @method_name.nil? # rubocop:disable Style/GuardClause
       puts 'Method name is required'
       exit
     end
-
-    if @kata_url.nil?
-      puts 'Kata URL is required'
-      exit
-    end
   end
-  # rubocop:enable Style/GuardClause
 
   def make
     create_directory
     create_solution
     create_spec
-    create_readme
   end
 
   def create_directory
@@ -55,14 +47,6 @@ class KataMaker
       f.write("describe '#{method_name}' do")
       f.write("\n\n")
       f.write('end')
-    end
-  end
-
-  def create_readme
-    filename = "#{kata_dir}/readme.md"
-
-    File.open(filename, 'w+') do |f|
-      f.write(@kata_url)
     end
   end
 end
