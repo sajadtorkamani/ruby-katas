@@ -1,7 +1,7 @@
 require_relative 'mutate_my_strings'
 
 describe 'String' do
-  describe '#replace_at', :focus do
+  describe '#replace_at' do
     it 'replaces char at given index' do
       expect('foo'.replace_at(1, '*')).to eq 'f*o'
       expect('foobar'.replace_at(3, '*')).to eq 'foo*ar'
