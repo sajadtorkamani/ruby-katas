@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/generate-uk-postcode/train/ruby

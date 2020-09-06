@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/create-a-string-for-values-within-a-given-range-from-a-hash/train/ruby

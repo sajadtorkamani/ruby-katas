@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/does-array-x-contain-all-values-within-array-y/train/ruby

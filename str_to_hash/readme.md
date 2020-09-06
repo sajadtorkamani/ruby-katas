@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/turn-string-input-into-hash/train/ruby

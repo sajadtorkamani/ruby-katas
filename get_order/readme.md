@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/5d23d89906f92a00267bb83d/train/ruby
