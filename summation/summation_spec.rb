@@ -2,11 +2,11 @@
 
 require_relative './summation'
 
-describe :summation do
+describe 'summation' do
   it 'handles valid inputs' do
-    expect(summation(3)).to eql(6)
-    expect(summation(10)).to eql(55)
-    expect(summation(5)).to eql(15)
+    expect(summation(3)).to be(6)
+    expect(summation(10)).to be(55)
+    expect(summation(5)).to be(15)
   end
 
   it 'handles invalid inputs' do

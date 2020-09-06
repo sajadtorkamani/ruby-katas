@@ -11,6 +11,7 @@ class KataMaker
     validate_args
   end
 
+  # rubocop:disable Style/GuardClause
   def validate_args
     if @method_name.nil?
       puts 'Method name is required'
@@ -22,6 +23,7 @@ class KataMaker
       exit
     end
   end
+  # rubocop:enable Style/GuardClause
 
   def make
     create_directory

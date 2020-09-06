@@ -26,6 +26,7 @@
 #  * zeus: 'zeus rspec' (requires the server to be started separately)
 #  * 'just' rspec: 'rspec'
 
+# rubocop:disable Metrics/BlockLength
 guard :rspec, cmd: 'bundle exec rspec' do
   require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
@@ -56,13 +57,13 @@ guard :rspec, cmd: 'bundle exec rspec' do
   end
 
   # Rails config changes
-  watch(rails.spec_helper)     { rspec.spec_dir }
-  watch(rails.routes)          { "#{rspec.spec_dir}/routing" }
-  watch(rails.app_controller)  { "#{rspec.spec_dir}/controllers" }
+  watch(rails.spec_helper) { rspec.spec_dir }
+  watch(rails.routes) { "#{rspec.spec_dir}/routing" }
+  watch(rails.app_controller) { "#{rspec.spec_dir}/controllers" }
 
   # Capybara features specs
-  watch(rails.view_dirs)     { |m| rspec.spec.call("features/#{m[1]}") }
-  watch(rails.layouts)       { |m| rspec.spec.call("features/#{m[1]}") }
+  watch(rails.view_dirs) { |m| rspec.spec.call("features/#{m[1]}") }
+  watch(rails.layouts) { |m| rspec.spec.call("features/#{m[1]}") }
 
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})
@@ -70,3 +71,4 @@ guard :rspec, cmd: 'bundle exec rspec' do
     Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance'
   end
 end
+# rubocop:enable Metrics/BlockLength

@@ -6,16 +6,16 @@ class String
   end
 end
 
-def mutate_my_strings(s1, s2)
+def mutate_my_strings(str1, str2)
   differing_indices = []
-  mutations = [s1]
+  mutations = [str1]
 
-  s2.each_char.with_index { |char, index| differing_indices << index unless char == s1[index] }
+  str2.each_char.with_index { |char, index| differing_indices << index unless char == str1[index] }
 
   differing_indices.each do |index|
-    mutation = mutations.last.replace_at(index, s2[index])
+    mutation = mutations.last.replace_at(index, str2[index])
     mutations << mutation
   end
 
-  mutations.join("\n") + "\n"
+  "#{mutations.join("\n")}\n"
 end

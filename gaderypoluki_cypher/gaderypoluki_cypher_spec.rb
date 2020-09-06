@@ -2,7 +2,7 @@
 
 require_relative 'gaderypoluki_cypher'
 
-describe :encode do
+describe 'encode' do
   it 'correctly encodes input string' do
     expect(encode('ABCD')).to eq 'GBCE'
     expect(encode('GBCE')).to eq 'ABCD'
@@ -10,7 +10,7 @@ describe :encode do
   end
 end
 
-describe :decode do
+describe 'decode' do
   it 'correctly decodes input string' do
     expect(decode('agedyropulik')).to eq 'gaderypoluki'
     expect(decode('Ala has a cat')).to eq 'Gug hgs g cgt'

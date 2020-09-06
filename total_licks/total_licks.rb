@@ -5,7 +5,8 @@ def total_licks(challenges)
   toughest_challenge = challenges.select { |_k, v| v.positive? }.key(challenges.values.max)
 
   if toughest_challenge
-    "It took #{total} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was #{toughest_challenge}."
+    "It took #{total} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was "\
+    "#{toughest_challenge}."
   else
     "It took #{total} licks to get to the tootsie roll center of a tootsie pop."
   end

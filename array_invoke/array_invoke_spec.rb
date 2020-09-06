@@ -29,7 +29,7 @@ describe 'Array#invoke' do
   it 'handles blocks' do
     items = [Item.new('John'), Item.new('Bob'), Item.new('Alice')]
 
-    result = items.invoke(:update, 'foo', 'bar') { |item| item.name === 'Alice' }
+    result = items.invoke(:update, 'foo', 'bar') { |item| item.name == 'Alice' }
 
     expect(result).to eq ['updated'] # Only once Alice
   end

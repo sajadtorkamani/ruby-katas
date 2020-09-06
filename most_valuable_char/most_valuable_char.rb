@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/AbcSize
 def most_valuable_char(str)
   chars = {}
 
-  str.chars.uniq.each do |char|
-    chars[char] = str.rindex(char) - str.index(char)
-  end
+  str.chars.uniq.each { |char| chars[char] = str.rindex(char) - str.index(char) }
 
   chars.min do |a, b|
     # Sort lexicographically if values are same
-    if a[1] === b[1]
+    if a[1] == b[1]
       a[0] <=> b[0]
     else
       # Sort by value
@@ -17,3 +16,4 @@ def most_valuable_char(str)
     end
   end[0]
 end
+# rubocop:enable Metrics/AbcSize

@@ -3,7 +3,7 @@
 require_relative 'array_zip'
 
 describe Array do
-  describe :zip do
+  describe '#zip' do
     it 'returns correct result' do
       a = [1, 2, 3, 4, 5]
       b = %w[a b c d e]

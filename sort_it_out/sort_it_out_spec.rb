@@ -2,7 +2,7 @@
 
 require_relative 'sort_it_out'
 
-describe :sort_it_out do
+describe 'sort_it_out' do
   it 'sorts numbers correctly' do
     expect(sort_it_out([26, 243, 52, 2, 432_414, 1, 11, 46, 32])).to eq [1, 11, 243, 432_414, 52, 46, 32, 26, 2]
     expect(sort_it_out([19, 65, 88, 112, 60, 14, 33, 49, 88])).to eq [19, 33, 49, 65, 112, 88, 88, 60, 14]

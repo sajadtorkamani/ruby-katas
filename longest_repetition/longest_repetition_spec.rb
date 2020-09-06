@@ -2,7 +2,7 @@
 
 require_relative 'longest_repetition'
 
-describe :longest_repetition do
+describe 'longest_repetition' do
   it 'handles cases where there is a single char with longest repetition' do
     expect(longest_repetition('aaaabb')).to eq ['a', 4]
     expect(longest_repetition('bbbaaabaaaa')).to eq ['a', 4]

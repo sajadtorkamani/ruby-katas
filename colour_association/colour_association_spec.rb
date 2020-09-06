@@ -2,7 +2,7 @@
 
 require_relative 'colour_association'
 
-describe :colour_association do
+describe 'colour_association' do
   it 'converts 2D array to hash' do
     expect(colour_association([%w[white goodness], %w[blue tranquility]])).to eql [
       { 'white' => 'goodness' }, { 'blue' => 'tranquility' }

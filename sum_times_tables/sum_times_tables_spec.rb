@@ -2,7 +2,7 @@
 
 require_relative 'sum_times_tables'
 
-describe :sum_times_tables do
+describe 'sum_times_tables' do
   it 'returns correct result' do
     expect(sum_times_tables([2, 3], 1, 3)).to eq 30
     expect(sum_times_tables([1, 3, 5], 1, 1)).to eq 9

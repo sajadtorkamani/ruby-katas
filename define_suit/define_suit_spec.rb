@@ -2,7 +2,7 @@
 
 require_relative 'define_suit'
 
-describe :define_suit do
+describe 'define_suit' do
   it 'returns correct suit based on card' do
     expect(define_suit('3C')).to eq 'clubs'
     expect(define_suit('QS')).to eq 'spades'

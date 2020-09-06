@@ -2,7 +2,7 @@
 
 require_relative './format_words'
 
-RSpec.describe :format_words do
+RSpec.describe 'format_words' do
   it 'returns empty string if words is nil or empty' do
     expect(format_words(nil)).to eq ''
     expect(format_words([])).to eq ''

@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
+# rubocop:disable Naming/MethodParameterName
 def sum_eq_n?(nums, n)
-  return n.zero? if nums.empty?
+  return true if nums.empty?
 
   nums.each.with_index do |num, index|
     other_nums = nums.drop(index + 1)
-    return true if other_nums.any? { |other_num| num + other_num === n }
+    return true if other_nums.any? { |other_num| num + other_num == n }
   end
 
   false
 end
+# rubocop:enable Naming/MethodParameterName

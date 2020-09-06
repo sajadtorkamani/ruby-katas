@@ -2,7 +2,8 @@
 
 require_relative './array_filters'
 
-describe 'Array' do
+# rubocop:disable Metrics/BlockLength
+describe Array do
   describe '#even' do
     it 'works correctly' do
       expect([1, 2, 3, 4, 5, 'fo'].even).to eq [2, 4]
@@ -34,3 +35,4 @@ describe 'Array' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength

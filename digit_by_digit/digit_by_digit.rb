@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class Num
-  @@names = %w[zero one two three four five six seven eight nine]
+NAMES = %w[zero one two three four five six seven eight nine].freeze
 
+class Num
   attr_accessor :value
 
   def initialize(value)
@@ -13,7 +13,7 @@ class Num
     @value.to_i
   end
 
-  @@names.each.with_index do |name, num|
+  NAMES.each.with_index do |name, num|
     define_singleton_method(name.to_sym) do
       new(num.to_s)
     end

@@ -2,7 +2,7 @@
 
 require_relative 'get_order'
 
-describe :get_order do
+describe 'get_order' do
   it 'returns correctly formatted result' do
     expect(get_order('milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza'))
       .to eq 'Burger Fries Chicken Pizza Pizza Pizza Sandwich Milkshake Milkshake Coke'

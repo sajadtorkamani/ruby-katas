@@ -2,7 +2,7 @@
 
 require_relative 'date_checker'
 
-describe :date_checker do
+describe 'date_checker' do
   it 'returns true if date is in the format 01-09-2016 01:20' do
     expect(date_checker('01-09-2016 01:20')).to eq true
     expect(date_checker('01-09-2016 01;20')).to eq false

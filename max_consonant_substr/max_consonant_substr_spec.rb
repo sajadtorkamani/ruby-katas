@@ -2,7 +2,7 @@
 
 require_relative './max_consonant_substr'
 
-describe :max_consonant_substr do
+describe 'max_consonant_substr' do
   it 'returns correct result' do
     expect(solve('strength')).to eq 57
     expect(solve('zodiac')).to eq 26

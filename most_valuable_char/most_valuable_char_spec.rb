@@ -2,7 +2,7 @@
 
 require_relative 'most_valuable_char'
 
-describe :most_valuable_char do
+describe 'most_valuable_char' do
   it 'returns correct result' do
     expect(most_valuable_char('axyzxyz')).to eq 'x'
     expect(most_valuable_char('aabccc')).to eq 'c'

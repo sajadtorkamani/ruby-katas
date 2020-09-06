@@ -5,5 +5,5 @@ def share_price(invested, changes)
     price * ((100 + percent) / 100.0)
   end
 
-  '%.2f' % final_price
+  format('%<final_price>.2f', final_price: final_price)
 end

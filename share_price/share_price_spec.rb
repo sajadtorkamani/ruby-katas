@@ -2,7 +2,7 @@
 
 require_relative 'share_price'
 
-describe :share_price do
+describe 'share_price' do
   it 'returns the final share price after all changes have been applied' do
     expect(share_price(100, [-50, 50])).to eql '75.00'
     expect(share_price(100, [-50, 100])).to eql '100.00'

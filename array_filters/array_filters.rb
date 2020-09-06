@@ -9,12 +9,12 @@ class Array
     integers.select(&:odd?)
   end
 
-  def under(x)
-    integers.select { |v| v < x }
+  def under(num)
+    integers.select { |v| v < num }
   end
 
-  def over(x)
-    integers.select { |v| v > x }
+  def over(num)
+    integers.select { |v| v > num }
   end
 
   def in_range(lower, upper = nil)

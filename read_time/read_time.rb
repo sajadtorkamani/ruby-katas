@@ -4,6 +4,7 @@ def read_time(time)
   TimeReader.new(time).print_time
 end
 
+# :nodoc:
 class TimeReader
   attr_accessor :time, :units, :hour, :minute
 
@@ -57,11 +58,11 @@ class TimeReader
   end
 
   def quarter_past?
-    @minute === 15
+    @minute == 15
   end
 
   def half_past?
-    @minute === 30
+    @minute == 30
   end
 
   def quarter_to?
