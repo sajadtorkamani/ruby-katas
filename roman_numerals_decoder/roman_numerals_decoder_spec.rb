@@ -13,8 +13,8 @@ describe 'roman_numerals_decoder' do
       ['MDCLXVI', 1666]
     ]
 
-    examples.each do |example|
-      expect(roman_numerals_decoder(example[0])).to eq example[1]
+    examples.each do |(input, expected)|
+      expect(roman_numerals_decoder(input)).to eq expected
     end
   end
 end
