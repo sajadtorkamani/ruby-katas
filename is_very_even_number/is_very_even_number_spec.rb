@@ -13,6 +13,6 @@ describe 'is_very_even_number' do
     expect(is_very_even_number(1234)).to eql false
     expect(is_very_even_number(88)).to eql false
     expect(is_very_even_number(24)).to eql true
-    expect(is_very_even_number(400000220)).to eql true
+    expect(is_very_even_number(400_000_220)).to eql true
   end
 end

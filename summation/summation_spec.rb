@@ -8,8 +8,8 @@ describe :summation do
   end
 
   it 'handles invalid inputs' do
-    expect(summation('538')).to eql ('Invalid Value')
-    expect(summation('Foo')).to eql ( 'Invalid Value')
-    expect(summation(67.9)).to eql ( 'Invalid Value')
+    expect(summation('538')).to eql 'Invalid Value'
+    expect(summation('Foo')).to eql 'Invalid Value'
+    expect(summation(67.9)).to eql 'Invalid Value'
   end
 end

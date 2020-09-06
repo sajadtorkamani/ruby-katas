@@ -7,12 +7,12 @@ RSpec.describe :format_words do
   end
 
   it 'handles three or more words' do
-    expect(format_words(%w(foo bar baz))).to eq 'foo, bar and baz'
-    expect(format_words(%w(foo bar baz bang))).to eq 'foo, bar, baz and bang'
+    expect(format_words(%w[foo bar baz])).to eq 'foo, bar and baz'
+    expect(format_words(%w[foo bar baz bang])).to eq 'foo, bar, baz and bang'
   end
 
   it 'handles two words' do
-    expect(format_words(%w(foo bar))).to eq 'foo and bar'
+    expect(format_words(%w[foo bar])).to eq 'foo and bar'
   end
 
   it 'handles single word' do

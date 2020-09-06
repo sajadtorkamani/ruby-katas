@@ -1,7 +1,3 @@
 def is_palindrome(str)
-  if str.is_a? String
-    str === str.reverse
-  else
-    nil
-  end
+  str === str.reverse if str.is_a? String
 end

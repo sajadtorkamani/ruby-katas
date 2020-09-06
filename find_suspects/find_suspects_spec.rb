@@ -8,12 +8,12 @@ describe 'find_suspects' do
 
   it 'returns persons with at least one illegal between allowed items' do
     pockets = { meg: [1, 3], tom: [5, 3], jim: [1, 8] }
-    expect(find_suspects(pockets, [1, 3])).to eql [:tom, :jim]
+    expect(find_suspects(pockets, [1, 3])).to eql %i[tom jim]
   end
 
   it 'returns all with something in pockets if no allowed items' do
     pockets = { meg: [3], tom: [5] }
-    expect(find_suspects(pockets, [])).to eql [:meg, :tom]
+    expect(find_suspects(pockets, [])).to eql %i[meg tom]
   end
 
   it 'returns nil if all packets allowed' do

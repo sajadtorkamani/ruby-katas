@@ -1,7 +1,5 @@
 def sum_eq_n?(nums, n)
-  if nums.empty?
-    return n.zero?
-  end
+  return n.zero? if nums.empty?
 
   nums.each.with_index do |num, index|
     other_nums = nums.drop(index + 1)

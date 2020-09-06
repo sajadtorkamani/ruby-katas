@@ -1,9 +1,9 @@
 def find_suspects(pockets, allowed_items)
   return nil if pockets.empty?
 
-  suspects = pockets.select do |person, items|
-    items && items.any? { |item| allowed_items.include?(item) === false }
+  suspects = pockets.select do |_person, items|
+    items&.any? { |item| allowed_items.include?(item) === false }
   end
 
-  suspects.count > 0 ? suspects.keys : nil
+  suspects.count.positive? ? suspects.keys : nil
 end

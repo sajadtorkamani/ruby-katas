@@ -4,19 +4,19 @@ class KataMaker
 
   def initialize(args)
     @method_name, @kata_url = args
-    @kata_dir = File.join(__dir__, "..", @method_name)
+    @kata_dir = File.join(__dir__, '..', @method_name)
 
     validate_args
   end
 
   def validate_args
     if @method_name.nil?
-      puts "Method name is required"
+      puts 'Method name is required'
       exit
     end
 
     if @kata_url.nil?
-      puts "Kata URL is required"
+      puts 'Kata URL is required'
       exit
     end
   end
@@ -29,35 +29,35 @@ class KataMaker
   end
 
   def create_directory
-    Dir.mkdir(kata_dir) unless Dir.exists?(kata_dir)
+    Dir.mkdir(kata_dir) unless Dir.exist?(kata_dir)
   end
 
   def create_solution
     filename = "#{kata_dir}/#{method_name}.rb"
 
-    File.open(filename, "w+") do |f|
+    File.open(filename, 'w+') do |f|
       f.write("def #{method_name}")
       f.write("\n\n")
-      f.write("end")
+      f.write('end')
     end
   end
 
   def create_spec
     filename = "#{kata_dir}/#{method_name}_spec.rb"
 
-    File.open(filename, "w+") do |f|
+    File.open(filename, 'w+') do |f|
       f.write("require_relative '#{method_name}'")
       f.write("\n\n")
       f.write("describe '#{method_name}' do")
       f.write("\n\n")
-      f.write("end")
+      f.write('end')
     end
   end
 
   def create_readme
     filename = "#{kata_dir}/readme.md"
 
-    File.open(filename, "w+") do |f|
+    File.open(filename, 'w+') do |f|
       f.write(@kata_url)
     end
   end

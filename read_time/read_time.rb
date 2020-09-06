@@ -13,7 +13,7 @@ class TimeReader
   end
 
   def print_time
-    return "midnight" if midnight?
+    return 'midnight' if midnight?
     return "#{@hour} o'clock" if exact_hour?
     return "quarter past #{@hour}" if quarter_past?
     return "half past #{@hour}" if half_past?
@@ -27,7 +27,7 @@ class TimeReader
   end
 
   def pluralize_minutes(minutes)
-    minutes == "one" ? "#{minutes} minute" : "#{minutes} minutes"
+    minutes == 'one' ? "#{minutes} minute" : "#{minutes} minutes"
   end
 
   def minutes_past
@@ -71,11 +71,11 @@ HOURS = {
   '01': 'one', '02': 'two', '03': 'three', '04': 'four', '05': 'five', '06': 'six', '07': 'seven', '08': 'eight',
   '09': 'nine', '10': 'ten', '11': 'eleven', '12': 'twelve', '13': 'one', '14': 'two', '15': 'three', '16': 'four',
   '17': 'five', '18': 'six', '19': 'seven', '20': 'eight', '21': 'nine', '22': 'ten', '23': 'eleven', '00': 'midnight'
-}
+}.freeze
 
 MINUTES = [
   'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve',
   'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty', 'twenty one',
   'twenty two', 'twenty three', 'twenty four', 'twenty five', 'twenty six', 'twenty seven', 'twenty eight',
   'twenty nine', 'thirty'
-]
+].freeze

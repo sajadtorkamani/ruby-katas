@@ -1,7 +1,7 @@
 def turkish_number(num)
   num_str = num.to_s
 
-  return get_turkish_num(num_str) if num <= 10 or num % 10 == 0
+  return get_turkish_num(num_str) if (num <= 10) || (num % 10 == 0)
 
   tenth_unit, single_unit = num_str.split('')
   get_turkish_num(tenth_unit + '0') + ' ' + get_turkish_num(single_unit)
@@ -27,7 +27,7 @@ def get_turkish_num(num)
     '60' => 'altmış',
     '70' => 'yetmiş',
     '80' => 'seksen',
-    '90' => 'doksan',
+    '90' => 'doksan'
   }
 
   nums_dict[num]

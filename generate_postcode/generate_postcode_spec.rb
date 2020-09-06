@@ -2,7 +2,7 @@ require_relative './generate_postcode'
 
 describe :generate_postcode do
   it 'returns correctly generated postcode' do
-    postcodes = Array.new(5).map { generate_postcode() }
+    postcodes = Array.new(5).map { generate_postcode }
 
     expect(postcodes.uniq.count).to eql(5)
     postcodes.each do |postcode|

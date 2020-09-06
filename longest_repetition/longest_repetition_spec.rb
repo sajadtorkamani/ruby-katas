@@ -9,12 +9,12 @@ describe :longest_repetition do
   end
 
   it 'handles cases of two or more chars with same repetition length' do
-    expect(longest_repetition("aabb")).to eq ['a', 2]
-    expect(longest_repetition("ba")).to eq ['b', 1]
-    expect(longest_repetition("aaabbcccddd")).to eq ['a', 3]
+    expect(longest_repetition('aabb')).to eq ['a', 2]
+    expect(longest_repetition('ba')).to eq ['b', 1]
+    expect(longest_repetition('aaabbcccddd')).to eq ['a', 3]
   end
 
   it 'handles empty strings' do
-    expect(longest_repetition("")).to eq ['', 0]
+    expect(longest_repetition('')).to eq ['', 0]
   end
 end

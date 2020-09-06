@@ -11,7 +11,7 @@ class Item
     @arg1 = arg1
     @arg2 = arg2
 
-    "updated"
+    'updated'
   end
 end
 
@@ -21,7 +21,7 @@ describe 'Array#invoke' do
 
     result = items.invoke(:update, 'foo', 'bar')
 
-    expect(result).to eq ['updated', 'updated']
+    expect(result).to eq %w[updated updated]
   end
 
   it 'handles blocks' do
