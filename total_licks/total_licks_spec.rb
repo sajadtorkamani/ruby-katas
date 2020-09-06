@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'total_licks'
 
 describe 'total_licks' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'date_checker'
 
 describe :date_checker do

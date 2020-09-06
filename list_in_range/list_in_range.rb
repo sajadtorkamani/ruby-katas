@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def list_in_range(hash, range)
   hash
     .select { |_k, v| range.include?(v) }

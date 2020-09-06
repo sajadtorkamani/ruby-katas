@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './bingo'
 
 describe 'bingo' do

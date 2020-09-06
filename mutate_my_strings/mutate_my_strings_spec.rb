@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'mutate_my_strings'
 
 describe 'String' do

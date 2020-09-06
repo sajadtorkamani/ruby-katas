@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'define_suit'
 
 describe :define_suit do

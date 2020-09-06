@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './turkish_number'
 
 describe 'turkish_numbers' do

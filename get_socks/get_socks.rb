@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def get_socks(person, socks)
   if person == 'Punky'
     unique_socks = socks.uniq

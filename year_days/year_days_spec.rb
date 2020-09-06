@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'year_days'
 
 describe :year_days do

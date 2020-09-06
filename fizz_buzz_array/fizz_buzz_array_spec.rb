@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './fizz_buzz_array'
 
 describe :fizz_buzz_array do

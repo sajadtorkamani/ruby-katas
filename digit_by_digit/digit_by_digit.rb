@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Num
   @@names = %w[zero one two three four five six seven eight nine]
 

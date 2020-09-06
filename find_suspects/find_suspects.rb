@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def find_suspects(pockets, allowed_items)
   return nil if pockets.empty?
 

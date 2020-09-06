@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './change_count'
 
 describe 'change_count' do

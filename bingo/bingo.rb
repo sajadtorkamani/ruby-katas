@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def bingo(tickets, n)
   wins = tickets.map do |ticket|
     chars, winning_num = ticket

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './format_words'
 
 RSpec.describe :format_words do

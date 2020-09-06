@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def fizz_buzz_custom(str1 = 'Fizz', str2 = 'Buzz', num1 = 3, num2 = 5)
   (1..100).to_a.map do |num|
     case true

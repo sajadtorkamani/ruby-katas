@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'digit_by_digit'
 
 describe :Num do

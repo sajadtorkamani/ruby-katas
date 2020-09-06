@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'colour_association'
 
 describe :colour_association do

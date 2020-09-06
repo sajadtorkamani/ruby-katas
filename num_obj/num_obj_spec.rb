@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'num_obj'
 
 describe 'num_obj' do

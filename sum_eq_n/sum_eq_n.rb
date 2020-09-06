@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sum_eq_n?(nums, n)
   return n.zero? if nums.empty?
 

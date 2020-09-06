@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def read_time(time)
   TimeReader.new(time).print_time
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   def zip(arr, &block)
     length = [self, arr].map(&:length).min

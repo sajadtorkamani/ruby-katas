@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'most_valuable_char'
 
 describe :most_valuable_char do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './is_very_even_number'
 
 describe 'is_very_even_number' do

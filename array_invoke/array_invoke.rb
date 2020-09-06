@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   def invoke(method_name, *args, &block)
     items = block_given? ? self.select { |item| block.call(item) } : self

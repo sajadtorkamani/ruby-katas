@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def negation_value(negations_str, val)
   num_negations = negations_str.length
 

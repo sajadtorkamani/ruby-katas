@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def total_licks(challenges)
   total = 252 + challenges.values.sum
   toughest_challenge = challenges.select { |_k, v| v.positive? }.key(challenges.values.max)

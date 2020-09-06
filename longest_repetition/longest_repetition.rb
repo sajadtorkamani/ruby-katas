@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def longest_repetition(str)
   return ['', 0] if str.empty?
 

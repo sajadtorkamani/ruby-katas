@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'get_socks'
 
 describe 'get_socks' do

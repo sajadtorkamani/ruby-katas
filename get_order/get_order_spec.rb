@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'get_order'
 
 describe :get_order do

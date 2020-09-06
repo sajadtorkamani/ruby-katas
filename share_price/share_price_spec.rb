@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'share_price'
 
 describe :share_price do

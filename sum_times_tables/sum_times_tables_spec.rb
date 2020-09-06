@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'sum_times_tables'
 
 describe :sum_times_tables do

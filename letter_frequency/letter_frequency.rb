@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def letter_frequency(str)
   letters = str.downcase.scan(/[a-z]/)
 

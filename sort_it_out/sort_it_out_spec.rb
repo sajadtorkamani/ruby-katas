@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'sort_it_out'
 
 describe :sort_it_out do

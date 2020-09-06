@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def most_valuable_char(str)
   chars = {}
 

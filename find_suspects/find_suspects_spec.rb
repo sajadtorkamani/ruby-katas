@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './find_suspects'
 
 describe 'find_suspects' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def vowel_one(str)
   str.chars.map do |char|
     if char.match?(/[aeiou]/i)

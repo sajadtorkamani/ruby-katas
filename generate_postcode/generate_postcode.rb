@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def generate_postcode
   def digit
     (1..9).to_a.sample

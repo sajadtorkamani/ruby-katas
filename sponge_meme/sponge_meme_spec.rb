@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'sponge_meme'
 
 describe :sponge_meme do

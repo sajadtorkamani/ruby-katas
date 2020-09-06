@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def share_price(invested, changes)
   final_price = changes.reduce(invested) do |price, percent|
     price * ((100 + percent) / 100.0)

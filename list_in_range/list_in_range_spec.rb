@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './list_in_range'
 
 describe :list_in_range do

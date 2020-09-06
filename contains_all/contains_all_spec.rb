@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './contains_all'
 
 describe 'Array#contains_all?' do

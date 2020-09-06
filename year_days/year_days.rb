@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def year_days(year)
   num_days = leap_year?(year) ? 366 : 365
 
@@ -5,9 +7,9 @@ def year_days(year)
 end
 
 def leap_year?(year)
-  return true if year == 0
+  return true if year.zero?
 
-  is_century_year = year % 100 == 0
+  is_century_year = (year % 100).zero?
 
-  is_century_year ? year % 400 == 0 : year % 4 == 0
+  is_century_year ? (year % 400).zero? : (year % 4).zero?
 end

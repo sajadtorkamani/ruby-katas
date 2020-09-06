@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './negation_value'
 
 describe 'negation_value' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './max_consonant_substr'
 
 describe :max_consonant_substr do

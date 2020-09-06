@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './up_array'
 
 describe :up_array do

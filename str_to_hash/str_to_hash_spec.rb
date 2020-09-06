@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './str_to_hash'
 
 describe :str_to_hash do

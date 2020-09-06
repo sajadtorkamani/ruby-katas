@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'longest_repetition'
 
 describe :longest_repetition do

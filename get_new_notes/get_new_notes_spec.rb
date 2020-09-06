@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'get_new_notes'
 
 describe 'get_new_notes' do

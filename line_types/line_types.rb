@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def line_types(lines)
   lines.map do |line|
     next :unknown if line.nil?

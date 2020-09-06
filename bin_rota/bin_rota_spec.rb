@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'bin_rota'
 
 describe 'bin_rota' do

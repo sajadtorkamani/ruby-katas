@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def is_very_even_number(num)
   digits = num.digits
   return num.even? if digits.count === 1

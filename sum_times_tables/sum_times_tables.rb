@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sum_times_tables(table, min, max)
   return 0 if table.empty?
 

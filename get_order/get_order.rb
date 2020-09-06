@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def get_order(order)
   menu = %w[Burger Fries Chicken Pizza Sandwich Onionrings Milkshake Coke]
   order_regex = /#{menu.join('|')}/i

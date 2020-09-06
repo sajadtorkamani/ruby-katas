@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 def turkish_number(num)
   num_str = num.to_s
 
-  return get_turkish_num(num_str) if (num <= 10) || (num % 10 == 0)
+  return get_turkish_num(num_str) if (num <= 10) || (num % 10).zero?
 
   tenth_unit, single_unit = num_str.split('')
   get_turkish_num(tenth_unit + '0') + ' ' + get_turkish_num(single_unit)
