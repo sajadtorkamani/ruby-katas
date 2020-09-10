@@ -13,7 +13,7 @@ describe KataMaker do
       expect(described_class.new(['bar']).kata_dir).to eq "#{Dir.pwd}/bar"
     end
 
-    it 'exits and prints error to stdout if no method name is provided' do
+    it 'exits and prints error to stdout if no method name is provided as first argument' do
       expect { described_class.new([]) }
         .to raise_error(SystemExit).and output("Method name is required\n").to_stdout
     end
