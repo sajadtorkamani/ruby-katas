@@ -6,7 +6,7 @@ class KataMaker
 
   def initialize(args)
     @method_name = args.first
-    @kata_dir = File.join(__dir__, '..', @method_name)
+    @kata_dir = File.join(__dir__, @method_name)
 
     validate_args
   end
