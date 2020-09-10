@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'no_repeat'
 
 describe 'no_repeat' do

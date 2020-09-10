@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'process_2arrays'
 
 describe 'process_2arrays' do

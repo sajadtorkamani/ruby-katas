@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'map'
 
-func = lambda { |num| Integer(num).even? }
+func = ->(num) { Integer(num).even? }
 
 describe 'map' do
   it 'maps over array using the given function' do

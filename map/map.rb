@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def map(nums, func)
   return 'given argument is not a function' unless func.is_a? Proc
 

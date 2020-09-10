@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def process_2arrays(arr1, arr2)
   set1 = arr1.to_set
   set2 = arr2.to_set

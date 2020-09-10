@@ -2,7 +2,7 @@
 
 class String
   def replace_at(index, replacement)
-    self[0...index] + replacement + self[(index + 1)..-1]
+    self[0...index] + replacement + self[(index + 1)..]
   end
 end
 
