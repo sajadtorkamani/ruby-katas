@@ -35,6 +35,7 @@ class KataMaker
       f.write("def #{method_name}")
       f.write("\n\n")
       f.write('end')
+      f.write("\n")
     end
   end
 
@@ -47,6 +48,7 @@ class KataMaker
       f.write("describe '#{method_name}' do")
       f.write("\n\n")
       f.write('end')
+      f.write("\n")
     end
   end
 end
