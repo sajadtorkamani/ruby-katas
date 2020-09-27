@@ -33,17 +33,21 @@ class KataMaker
     filename = "#{kata_dir}/#{method_name}.rb"
 
     File.open(filename, 'w+') do |f|
+      f.write('# frozen_string_literal: true')
+      f.write("\n\n")
       f.write("def #{method_name}")
       f.write("\n\n")
-      f.write('end')
+      f.write('end ')
       f.write("\n")
     end
   end
 
-  def create_spec
+  def create_spec # rubocop:disable Metrics/MethodLength
     filename = "#{kata_dir}/#{method_name}_spec.rb"
 
     File.open(filename, 'w+') do |f|
+      f.write('# frozen_string_literal: true')
+      f.write("\n\n")
       f.write("require_relative '#{method_name}'")
       f.write("\n\n")
       f.write("describe '#{method_name}' do")
