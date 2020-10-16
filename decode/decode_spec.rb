@@ -2,14 +2,14 @@
 
 require_relative 'decode'
 
-describe 'decode' do
+xdescribe 'decode' do
   it 'decodes the given string' do
     expect(decode('svool')).to eql 'hello'
     expect(decode('r slkv mlylwb wvxlwvh gsrh nvhhztv')).to eql 'i hope nobody decodes this message'
   end
 end
 
-describe 'decode_char' do
+xdescribe 'decode_char' do
   it 'decodes a single char' do
     expect(decode_char('a')).to eq 'z'
     expect(decode_char('b')).to eq 'y'

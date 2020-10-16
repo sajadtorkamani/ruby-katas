@@ -2,7 +2,7 @@
 
 require_relative 'decode_barksdale'
 
-describe 'decode_barksdale' do
+xdescribe 'decode_barksdale' do
   it 'decodes phone number' do
     expect(decode('4103432323')).to eq '6957678787'
     expect(decode('4103438970')).to eq '6957672135'
