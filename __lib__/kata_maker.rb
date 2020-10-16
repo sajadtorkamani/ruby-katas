@@ -37,12 +37,12 @@ class KataMaker
       f.write("\n\n")
       f.write("def #{method_name}")
       f.write("\n\n")
-      f.write('end ')
+      f.write('end')
       f.write("\n")
     end
   end
 
-  def create_spec # rubocop:disable Metrics/MethodLength
+  def create_spec
     filename = "#{kata_dir}/#{method_name}_spec.rb"
 
     File.open(filename, 'w+') do |f|
