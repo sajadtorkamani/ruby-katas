@@ -11,6 +11,10 @@ Metrics/BlockLength:
   Exclude:
     - '**/*_spec.rb'
 
+Layout/LineLength:
+  Exclude:
+    - '**/*_spec.rb'
+
 RSpec/MultipleExpectations:
   Enabled: false
 
