@@ -17,7 +17,7 @@ def padded_digits(num1, num2)
 
   [num1, num2].map do |num|
     format("%0#{max_digits}d", num)
-      .split('')
+      .chars
       .map(&:to_i)
   end
 end

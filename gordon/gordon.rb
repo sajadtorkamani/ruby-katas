@@ -2,7 +2,7 @@
 
 # rubocop:disable Style/StringConcatenation
 def gordon(str)
-  str.split(' ').map do |word|
+  str.split.map do |word|
     word
       .upcase
       .gsub(/A/, '@')

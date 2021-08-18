@@ -3,7 +3,7 @@
 ALPHABET = ('a'..'z').to_a
 
 def decode(str)
-  str.each_char.map { |c| decode_char(c) }.join('')
+  str.each_char.map { |c| decode_char(c) }.join
 end
 
 def decode_char(char)

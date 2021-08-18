@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # frozen_string_literal
 
 def contains_all_rots(str, rotations)
@@ -9,7 +11,7 @@ end
 def str_rotations(str)
   rots = [str]
 
-  (str.length - 1).times do |n|
+  (str.length - 1).times do |_n|
     first_char = str[0]
     remaining_chars = str[1..]
     str = remaining_chars + first_char

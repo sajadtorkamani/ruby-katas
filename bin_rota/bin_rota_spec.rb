@@ -2,7 +2,6 @@
 
 require_relative 'bin_rota'
 
-# rubocop:disable Layout/LineLength
 describe 'bin_rota' do
   it 'returns correct result' do
     expect(bin_rota([%w[Bob Nora], %w[Ruby Carl]])).to eq %w[Bob Nora Carl Ruby]
@@ -17,4 +16,3 @@ describe 'bin_rota' do
     expect(bin_rota([['Billy'], ['Megan'], ['Aki'], ['Arun'], ['Joy']])).to eq %w[Billy Megan Aki Arun Joy]
   end
 end
-# rubocop:enable Layout/LineLength

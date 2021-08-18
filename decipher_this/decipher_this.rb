@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def decipher_this(str)
-  str.split(' ').map { |word| decipher_word(word) }.join(' ')
+  str.split.map { |word| decipher_word(word) }.join(' ')
 end
 
 def decipher_word(word)

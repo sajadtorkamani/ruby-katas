@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/ParameterLists
 def fizz_buzz_custom(str1 = 'Fizz', str2 = 'Buzz', num1 = 3, num2 = 5)
   (1..100).to_a.map do |num|
     if (num % num1).zero? && (num % num2).zero?
@@ -14,4 +14,4 @@ def fizz_buzz_custom(str1 = 'Fizz', str2 = 'Buzz', num1 = 3, num2 = 5)
     end
   end
 end
-# rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/ParameterLists

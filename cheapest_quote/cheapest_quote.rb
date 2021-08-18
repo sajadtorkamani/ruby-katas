@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Not the cleanest!
-# rubocop:disable Metrics/AbcSize
 def cheapest_quote(num_newspapers)
   num_forties, remainder = calculate_num_bundles(num_newspapers, 40)
   num_twenties, remainder = calculate_num_bundles(remainder, 20)
@@ -21,4 +20,3 @@ def calculate_num_bundles(quantity, bundle_size)
 
   [num_bundles, remainder]
 end
-# rubocop:enable Metrics/AbcSize

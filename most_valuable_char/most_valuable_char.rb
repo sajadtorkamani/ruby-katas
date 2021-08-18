@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/AbcSize
 def most_valuable_char(str)
   chars = {}
 
@@ -16,4 +15,3 @@ def most_valuable_char(str)
     end
   end[0]
 end
-# rubocop:enable Metrics/AbcSize

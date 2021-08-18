@@ -12,7 +12,6 @@ describe 'String' do
 end
 
 describe 'mutate_my_strings' do
-  # rubocop:disable Layout/LineLength
   it 'returns correct result' do
     expect(mutate_my_strings('bubble gum', 'turtle ham')).to eq "bubble gum\ntubble gum\nturble gum\nturtle gum\nturtle hum\nturtle ham\n"
     expect(mutate_my_strings('car door', 'car bore')).to eq "car door\ncar boor\ncar borr\ncar bore\n"
@@ -25,5 +24,4 @@ describe 'mutate_my_strings' do
     expect(mutate_my_strings('bubble gum', 'bubble gum')).to eq "bubble gum\n"
     expect(mutate_my_strings('', '')).to eq "\n"
   end
-  # rubocop:enable Layout/LineLength
 end

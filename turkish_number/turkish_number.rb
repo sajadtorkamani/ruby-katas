@@ -5,7 +5,7 @@ def turkish_number(num)
 
   return get_turkish_num(num_str) if (num <= 10) || (num % 10).zero?
 
-  tenth_unit, single_unit = num_str.split('')
+  tenth_unit, single_unit = num_str.chars
   "#{get_turkish_num(tenth_unit + '0')} #{get_turkish_num(single_unit)}" # rubocop:disable Style/StringConcatenation
 end
 

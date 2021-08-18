@@ -7,6 +7,6 @@ def up_array(nums)
 
   sum
     .to_s
-    .split('')
+    .chars
     .map(&:to_i)
 end

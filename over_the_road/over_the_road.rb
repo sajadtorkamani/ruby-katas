@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # frozen_string_literal
 
 def over_the_road(house_no, street_len)

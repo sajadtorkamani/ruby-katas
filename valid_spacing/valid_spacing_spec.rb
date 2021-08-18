@@ -19,7 +19,7 @@ describe 'valid_spacing' do
   end
 
   it 'returns true for other valid spacing' do
-    ['Hello world', 'Hello',  'Helloworld', ''].each do |str|
+    ['Hello world', 'Hello', 'Helloworld', ''].each do |str|
       expect(valid_spacing(str)).to be true
     end
   end

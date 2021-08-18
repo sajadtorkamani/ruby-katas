@@ -9,7 +9,7 @@ describe 'previous_multiple_of_three' do
 
   it 'keeps removing the last digit until it reaches a multiple of three' do
     expect(previous_multiple_of_three(1244)).to eq(12)
-    expect(previous_multiple_of_three(952406)).to eq(9)
+    expect(previous_multiple_of_three(952_406)).to eq(9)
   end
 
   it 'returns nil if a multiple of three is not possible' do

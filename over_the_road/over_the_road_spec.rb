@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # frozen_string_literal
 
 require_relative 'over_the_road'

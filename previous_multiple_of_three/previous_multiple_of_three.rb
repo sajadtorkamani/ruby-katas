@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 def previous_multiple_of_three(num)
-  return num if num % 3 === 0
+  return num if (num % 3).zero?
 
   (num.to_s.length - 1).times do
     num = remove_last_digit(num)
-    return num if num % 3 === 0
+    return num if (num % 3).zero?
   end
 
   nil

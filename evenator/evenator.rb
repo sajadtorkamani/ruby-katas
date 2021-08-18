@@ -3,7 +3,7 @@
 def evenator(str)
   str
     .gsub(/[.,?!_]/, '')
-    .split(' ')
+    .split
     .map { |word| word.size.even? ? word : "#{word}#{word[-1]}" }
     .join(' ')
 end

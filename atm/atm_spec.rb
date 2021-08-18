@@ -11,8 +11,8 @@ describe 'atm' do
   end
 
   it 'returns false if choosing notes is not possible' do
-    expect(atm(125)).to eq -1
-    expect(atm(666)).to eq -1
-    expect(atm(42)).to eq -1
+    expect(atm(125)).to eq(-1)
+    expect(atm(666)).to eq(-1)
+    expect(atm(42)).to eq(-1)
   end
 end

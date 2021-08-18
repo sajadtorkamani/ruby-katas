@@ -11,5 +11,5 @@ def string_color(name)
 
   [part1, part2, part3]
     .map { |num| (num % 256).to_s(16).rjust(2, '0').upcase }
-    .join('')
+    .join
 end
