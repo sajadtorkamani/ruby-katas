@@ -6,6 +6,7 @@ ruby '3.0.2'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
+gem 'byebug', '~> 9.0', '>= 9.0.6'
 gem 'guard-rspec', require: false
 gem 'overcommit', require: false
 gem 'rake'
