@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+method_name=$1
+
+if [[ -z $method_name ]]; then
+  echo 'Provide a method name'
+  exit 1
+fi
+
+touch spec/"${method_name}"_spec.rb
+touch src/"${method_name}".rb
