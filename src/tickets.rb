@@ -7,8 +7,8 @@ class Array
 end
 
 def tickets(bills_given)
-  register = []
   bills = { twenty_five: 25, fifty: 50, hundred: 100 }
+  register = []
 
   bills_given.each do |bill|
     # No change required, move on to next person
