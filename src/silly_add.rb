@@ -5,8 +5,8 @@ def silly_add(num1, num2)
   result = []
   num1_digits, num2_digits = padded_digits(num1, num2)
 
-  num1_digits.each.with_index do |a_digit, index|
-    result << (a_digit + num2_digits[index])
+  num1_digits.each.with_index do |a_digit, row_index|
+    result << (a_digit + num2_digits[row_index])
   end
 
   result.join.to_i

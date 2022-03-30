@@ -3,11 +3,11 @@
 def pillow(str)
   fridge_str, pillow_str = str
 
-  fridge_indices = indices_of_char('n', fridge_str)
-  pillow_indices = indices_of_char('B', pillow_str)
+  fridge_indices = indices_of_char("n", fridge_str)
+  pillow_indices = indices_of_char("B", pillow_str)
 
-  pillow_indices.each_with_index do |pillow_index, index|
-    return true if pillow_index == fridge_indices[index]
+  pillow_indices.each_with_index do |pillow_row_index, index|
+    return true if pillow_index == fridge_indices[row_index]
   end
 
   false
