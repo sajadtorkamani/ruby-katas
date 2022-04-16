@@ -7,7 +7,7 @@ def pillow(str)
   pillow_indices = indices_of_char("B", pillow_str)
 
   pillow_indices.each_with_index do |pillow_row_index, index|
-    return true if pillow_index == fridge_indices[row_index]
+    return true if pillow_row_index == fridge_indices[pillow_row_index]
   end
 
   false
