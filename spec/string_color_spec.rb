@@ -7,6 +7,6 @@ describe 'string_color' do
     expect(string_color('Jack')).to eq '79CAE5'
     expect(string_color('John Doe')).to eq 'C70033'
     expect(string_color('CodeWars')).to eq '182892'
-    expect(string_color('X')).to eq nil
+    expect(string_color('X')).to be_nil
   end
 end

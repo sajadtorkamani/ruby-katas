@@ -13,8 +13,8 @@ describe 'previous_multiple_of_three' do
   end
 
   it 'returns nil if a multiple of three is not possible' do
-    expect(previous_multiple_of_three(1)).to eq(nil)
-    expect(previous_multiple_of_three(25)).to eq(nil)
+    expect(previous_multiple_of_three(1)).to be_nil
+    expect(previous_multiple_of_three(25)).to be_nil
   end
 end
 
@@ -25,6 +25,6 @@ describe 'remove_last_digit' do
   end
 
   it 'returns nil when only one digit num is given' do
-    expect(remove_last_digit(1)).to eq nil
+    expect(remove_last_digit(1)).to be_nil
   end
 end

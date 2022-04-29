@@ -8,6 +8,5 @@ describe 'mirror' do
     expect(mirror([-8, 42, 18, 0, -16])).to eq [-16, -8, 0, 18, 42, 18, 0, -8, -16]
     expect(mirror([2, 1])).to eq [1, 2, 1]
     expect(mirror([])).to eq []
-    # expect(mirror([1])).to eq [1]
   end
 end

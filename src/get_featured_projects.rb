@@ -33,17 +33,13 @@ class FeaturedProjects
   end
 
   def popular_count
-    if @unpopular_projects.count < DEFAULT_UNPOPULAR_COUNT
-      return COUNT - @unpopular_projects.count
-    end
+    return COUNT - @unpopular_projects.count if @unpopular_projects.count < DEFAULT_UNPOPULAR_COUNT
 
     DEFAULT_POPULAR_COUNT
   end
 
   def unpopular_count
-    if @popular_projects.count < DEFAULT_POPULAR_COUNT
-      return COUNT - @popular_projects.count
-    end
+    return COUNT - @popular_projects.count if @popular_projects.count < DEFAULT_POPULAR_COUNT
 
     DEFAULT_UNPOPULAR_COUNT
   end

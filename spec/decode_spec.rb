@@ -3,10 +3,10 @@
 require_relative '../src/decode'
 
 # describe 'decode' do
-  # it 'decodes the given string' do
-  #   expect(decode('svool')).to eql 'hello'
-  #   expect(decode('r slkv mlylwb wvxlwvh gsrh nvhhztv')).to eql 'i hope nobody decodes this message'
-  # end
+# it 'decodes the given string' do
+#   expect(decode('svool')).to eql 'hello'
+#   expect(decode('r slkv mlylwb wvxlwvh gsrh nvhhztv')).to eql 'i hope nobody decodes this message'
+# end
 # end
 
 describe 'decode_char' do

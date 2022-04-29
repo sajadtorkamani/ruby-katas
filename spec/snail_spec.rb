@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require_relative "../src/snail"
+require_relative '../src/snail'
 
-describe "snail" do
-  it "returns the correct result" do
+describe 'snail' do
+  it 'returns the correct result' do
     input = [
       [1, 2, 3],
       [4, 5, 6],
-      [7, 8, 9],
+      [7, 8, 9]
     ]
 
     # [0, 0], [0, 1], [0, 2]

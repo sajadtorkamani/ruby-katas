@@ -20,6 +20,7 @@ def tickets(bills_given)
     # Change required for fifty dollar bill
     if bill == bills[:fifty]
       return 'NO' unless register.include?(bills[:twenty_five])
+
       register << bill
       register.delete_first(bills[:twenty_five])
       next
@@ -29,23 +30,23 @@ def tickets(bills_given)
     # Need $75 change. This can obtained in two ways:
     #   - 50, 25
     #   - 25, 25, 25
-    if bill == bills[:hundred]
-      has_fifty_and_twenty_five = register.include?(bills[:fifty]) && register.include?(bills[:twenty_five])
-      has_three_twenty_fives = register.count(bills[:twenty_five]) == 3
+    next unless bill == bills[:hundred]
 
-      if has_fifty_and_twenty_five
-        register.delete_first(bills[:fifty])
-        register.delete_first(bills[:twenty_five])
-        next
-      end
+    has_fifty_and_twenty_five = register.include?(bills[:fifty]) && register.include?(bills[:twenty_five])
+    has_three_twenty_fives = register.count(bills[:twenty_five]) == 3
 
-      if has_three_twenty_fives
-        register.delete_first(bills[:twenty_five], 3)
-        next
-      end
-
-      return 'NO'
+    if has_fifty_and_twenty_five
+      register.delete_first(bills[:fifty])
+      register.delete_first(bills[:twenty_five])
+      next
     end
+
+    if has_three_twenty_fives
+      register.delete_first(bills[:twenty_five], 3)
+      next
+    end
+
+    return 'NO'
   end
 
   'YES'

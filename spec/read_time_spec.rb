@@ -8,7 +8,7 @@ describe 'read_time' do
     expect(read_time('12:00')).to eql "twelve o'clock"
   end
 
-  it 'handles minutes <= 30 ' do
+  it 'handles minutes <= 30' do
     expect(read_time('13:09')).to eql 'nine minutes past one'
     expect(read_time('13:29')).to eql 'twenty nine minutes past one'
     expect(read_time('13:15')).to eql 'quarter past one'

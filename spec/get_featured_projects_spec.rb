@@ -4,13 +4,13 @@ require 'byebug'
 require_relative '../src/get_featured_projects'
 
 def get_fake_projects(npopular, nunpopular)
-  popular = (1..npopular).map { |x|
+  popular = (1..npopular).map do |x|
     { name: "Popular Project #{x}", nreceiving_from: 7, receiving: 10 }
-  }
+  end
 
-  unpopular = (1..nunpopular).map { |x|
+  unpopular = (1..nunpopular).map do |x|
     { name: "Unpopular Project #{x}", nreceiving_from: 3, receiving: 4 }
-  }
+  end
 
   (popular + unpopular).shuffle
 end
@@ -23,7 +23,7 @@ def get_featured_project_counts(projects)
 end
 
 describe 'get_featured_projects' do
-  it "should choose more popular than unpopular" do
+  it 'chooses more popular than unpopular' do
     projects = get_fake_projects(10, 5)
 
     npopular, nunpopular = get_featured_project_counts(projects)
@@ -31,7 +31,7 @@ describe 'get_featured_projects' do
     expect(nunpopular).to eq 3
   end
 
-  it "should deal with zero popular projects" do
+  it 'deals with zero popular projects' do
     projects = get_fake_projects(0, 10)
 
     npopular, nunpopular = get_featured_project_counts(projects)
@@ -39,7 +39,7 @@ describe 'get_featured_projects' do
     expect(nunpopular).to eq 10
   end
 
-  it "should deal with zero unpopular projects" do
+  it 'deals with zero unpopular projects' do
     projects = get_fake_projects(10, 0)
 
     npopular, nunpopular = get_featured_project_counts(projects)
@@ -47,7 +47,7 @@ describe 'get_featured_projects' do
     expect(nunpopular).to eq 0
   end
 
-  it "should deal with some but too few popular projects" do
+  it 'deals with some but too few popular projects' do
     projects = get_fake_projects(4, 10)
 
     npopular, nunpopular = get_featured_project_counts(projects)

@@ -6,7 +6,7 @@ def total_licks(challenges)
 
   if toughest_challenge
     "It took #{total} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was "\
-    "#{toughest_challenge}."
+      "#{toughest_challenge}."
   else
     "It took #{total} licks to get to the tootsie roll center of a tootsie pop."
   end

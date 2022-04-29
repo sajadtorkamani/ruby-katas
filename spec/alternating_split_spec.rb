@@ -12,7 +12,7 @@ describe 'encrypt' do
   end
 
   it 'returns nil if given nil' do
-    expect(encrypt(nil, 1)).to eq nil
+    expect(encrypt(nil, 1)).to be_nil
   end
 
   it 'returns empty string if given empty string' do
@@ -35,7 +35,7 @@ describe 'decrypt' do
   end
 
   it 'returns nil if given nil' do
-    expect(decrypt(nil, 1)).to eq nil
+    expect(decrypt(nil, 1)).to be_nil
   end
 
   it 'returns empty string if given empty string' do

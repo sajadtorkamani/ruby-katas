@@ -5,7 +5,7 @@ require_relative '../src/find_suspects'
 describe 'find_suspects' do
   it 'returns nil if empty pockets' do
     pockets = {}
-    expect(find_suspects(pockets, [1, 3])).to be nil
+    expect(find_suspects(pockets, [1, 3])).to be_nil
   end
 
   it 'returns persons with at least one illegal between allowed items' do
@@ -20,11 +20,11 @@ describe 'find_suspects' do
 
   it 'returns nil if all packets allowed' do
     pockets = { tom: [2], bob: [2], julia: [3], meg: [3] }
-    expect(find_suspects(pockets, [2, 3])).to be nil
+    expect(find_suspects(pockets, [2, 3])).to be_nil
   end
 
   it 'returns nil if all with empty pockets' do
     pockets = { julia: nil, meg: [] }
-    expect(find_suspects(pockets, [1, 6])).to be nil
+    expect(find_suspects(pockets, [1, 6])).to be_nil
   end
 end

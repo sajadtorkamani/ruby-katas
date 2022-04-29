@@ -6,11 +6,11 @@ describe 'total_licks' do
   it 'handles simple case' do
     expect(total_licks({ 'freezing temps' => 10, 'clear skies' => -2 }))
       .to eq 'It took 260 licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was '\
-              'freezing temps.'
+             'freezing temps.'
 
     expect(total_licks({ 'dragons' => 100, 'evil wizards' => 110, 'trolls' => 50 }))
       .to eq 'It took 512 licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was '\
-            'evil wizards.'
+             'evil wizards.'
   end
 
   it 'handles cases without negative challenges' do
